@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saadat Qadri, ">
+
+
+        <title>Django Resources // Saadat Qadri // </title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/theme/css/pure.css">
+    <link rel="stylesheet" href="/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('/images/cover.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="/images/profile.png">
+                            <h1 class="brand-main"><a href="">Saadat Qadri</a></h1>
+                            <p class="tagline"></p>
+                                <p class="social">
+                                    <a href="https://github.com/saadatqadri/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/saadatqadri">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Django Resources</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="/tag/django.html">django</a>
+                                <a class="post-category" href="/tag/resources.html">resources</a>
+                        </p>
+                </header>
+            </section>
+            <p>Inspired by <a href="http://eddychan.com/post/15775730174/how-i-learnt-enough-python-django-to-be-dangerous-in-1">Eddy Chan's list</a>, I wanted to put together a list of Django resources that I used to learn the framework, and continue to reference today.</p>
+<h2>Beginner</h2>
+<p><a href="http://www.djangobook.com/en/2.0/">Django Book</a> - outdated now, needs to be rewritten for Django 1.6</p>
+<p><a href="http://lightbird.net/dbe/">Django By Example</a> - also needs updating, but a good selection of projects to try out</p>
+<h2>Moderate</h2>
+<p><a href="http://www.tangowithdjango.com/">Tango with Django</a> - full example, written in Django 1.5, easy to follow, brilliant. One of the best tutorials out there.</p>
+<p><a href="http://effectivedjango.com/tutorial/">Effective Django Tutorial</a> - written by an EventBrite engineer, love the section on Class-based Views</p>
+<h2>Advanced</h2>
+<p><a href="http://glynjackson.org/weblog/entry/django-angular.html">AngularJS and Django</a></p>
+<p>** in progress</p>
+            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Saadat Qadri &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
+</html>

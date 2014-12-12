@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saadat Qadri, ">
+
+
+        <title>Crossing the chasm, laggards first // Saadat Qadri // </title>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/theme/css/pure.css">
+    <link rel="stylesheet" href="/theme/css/pygments.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('/images/cover.jpg')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <img class="avatar" src="/images/profile.png">
+                            <h1 class="brand-main"><a href="">Saadat Qadri</a></h1>
+                            <p class="tagline"></p>
+                                <p class="social">
+                                    <a href="https://github.com/saadatqadri/">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                    <a href="https://twitter.com/saadatqadri">
+                                        <i class="fa fa-twitter-square fa-3x"></i>
+                                    </a>
+                                </p>
+                        </hgroup>
+                    </header>
+                </div>
+            </div>
+        </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>Crossing the chasm, laggards first</h1>
+                        <p class="post-meta">
+                            // under                                 <a class="post-category" href="/tag/lean.html">Lean</a>
+                                <a class="post-category" href="/tag/customer-development.html">Customer Development</a>
+                        </p>
+                </header>
+            </section>
+            <p>In 1962, the sociologist Everett Rogers published the Diffusion of Innovations, a theory that attempted to explain how, why, and at what rate new ideas and technology spread through cultures. Rogers used the term diffusion to explain how innovations are communicated through certain channels over time among the members of a social system. He postulated the four main elements that influence the spread of a new idea: the innovation, the communication channels, time, and a social system. Rogers is also credited with identifying four categories of adopters of innovation (in addition to the innovators themselves):</p>
+<ul>
+<li>
+<p>The Early Adopters: the visionaries, individuals who easily accept the product or idea</p>
+</li>
+<li>
+<p>The Early Majority: the pragmatists, individuals who will not try something until someone else has tried and tested the product</p>
+</li>
+<li>
+<p>The Late Majority: the skeptics, individuals who only welcome the idea long after the majority have accepted.</p>
+</li>
+<li>
+<p>The Laggards: individuals who have no choice but to accept the product.</p>
+</li>
+</ul>
+<p>Geoffrey Moore extended Roger’s theory to the marketing of technology products in his book, Crossing the Chasm. Moore argued that there exists a chasm between the early adopters (the visionaries) and the early majority (the pragmatists), and only once the innovators have successfully convinced both these groups to believe in their idea will the innovation actually have the potential for success. The market penetration required in order to cross the chasm is usually around 15-18% (what Malcolm Gladwell referred to as the ‘tipping point’). Moore also suggested that marketers focus on one group of customers at a time, using each group as a base for marketing to the next.</p>
+<p>Most innovators choose to start their marketing efforts with the early adopters, before moving onto the early majority - simply because it’s the easy and natural thing to do. Early adopters get the idea easily, and they’ll download the app or cheer you on because they’re excited to be a part of something innovative. Early adopters are also happy to provide feedback on your product, which is why they’re the perfect test market for customer development. The early majority, on the other hand, are tougher to attract and retain as customers, and need a lot more coaxing before they see value in the innovation. </p>
+<p>I think that when you’re building something that is completely disruptive, you need to go further. This sounds crazy - but I think that sometimes there is value in going after the laggards first. Find your most difficult customer, the hardest target market. Your most critical, most demanding, most obstinate customer. Sell the idea to them, and you’ll win half the battle. Why do this, given that laggards only comprise 14% of our population? I think there’s value - because when attempting to craft the marketing message for the laggards, you’ll have to dig deep to find out exactly what makes your product unique and innovative. You’ll have to work harder than ever to convince that particular segment of the population. You’ll end up doing all the work required to convince the early majority that you’re really onto something new and exciting.</p>
+<p>I’m planning on using this approach as I’m building Tryst - a recommendations engine for dates, events, and activities in the city where you live. My goal is to find my most difficult customer - folks who don’t even use smartphones - and convince that they could use a service to help them find relevant date ideas in the city where they live.</p>
+<p>Some may call it a total waste of time. I call it doing the hard work first. </p>
+<p>I’d really appreciate your thoughts on <a href="http://www.datesbytryst.com">Tryst</a> - here’s a survey that I could use your help on. </p>
+<p>Thanks for reading.</p>
+            <a href="#" class="go-top">Go Top</a>
+<footer class="footer">
+    <p>&copy; Saadat Qadri &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure-single">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>        </div>
+    </div>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
