@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Saadat Qadri</title><link href="http://saadatqadri.com/" rel="alternate"></link><link href="http://saadatqadri.com/feeds/django.atom.xml" rel="self"></link><id>http://saadatqadri.com/</id><updated>2014-05-26T10:20:00+02:00</updated><entry><title>Django Resources</title><link href="http://saadatqadri.com/django-resources.html" rel="alternate"></link><updated>2014-05-26T10:20:00+02:00</updated><author><name>Saadat Qadri</name></author><id>tag:saadatqadri.com,2014-05-26:django-resources.html</id><summary type="html">&lt;p&gt;Inspired by &lt;a href="http://eddychan.com/post/15775730174/how-i-learnt-enough-python-django-to-be-dangerous-in-1"&gt;Eddy Chan's list&lt;/a&gt;, I wanted to put together a list of Django resources that I used to learn the framework, and continue to reference today.&lt;/p&gt;
+&lt;h2&gt;Beginner&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.djangobook.com/en/2.0/"&gt;Django Book&lt;/a&gt; - outdated now, needs to be rewritten for Django 1.6&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lightbird.net/dbe/"&gt;Django By Example&lt;/a&gt; - also needs updating, but a good selection of projects to try out&lt;/p&gt;
+&lt;h2&gt;Moderate&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.tangowithdjango.com/"&gt;Tango with Django&lt;/a&gt; - full example, written in Django 1.5, easy to follow, brilliant. One of the best tutorials out there.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://effectivedjango.com/tutorial/"&gt;Effective Django Tutorial&lt;/a&gt; - written by an EventBrite engineer, love the section on Class-based Views&lt;/p&gt;
+&lt;h2&gt;Advanced&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://glynjackson.org/weblog/entry/django-angular.html"&gt;AngularJS and Django&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;** in progress&lt;/p&gt;</summary><category term="django"></category><category term="resources"></category></entry></feed>
