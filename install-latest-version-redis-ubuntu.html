@@ -6,7 +6,7 @@
     <meta name="description" content="Saadat Qadri, ">
 
 
-        <title>Why Tech Companies Need Engineer CEOs // Saadat Qadri // </title>
+        <title>Installing the latest version of Redis on Ubuntu // Saadat Qadri // </title>
 
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
@@ -50,21 +50,29 @@
         <div class="content">
             <section class="post">
                 <header class="post-header">
-                    <h1>Why Tech Companies Need Engineer CEOs</h1>
+                    <h1>Installing the latest version of Redis on Ubuntu</h1>
                         <p class="post-meta">
-                            // under                                 <a class="post-category" href="/tag/tech.html">tech</a>
-                                <a class="post-category" href="/tag/companies.html">companies</a>
-                                <a class="post-category" href="/tag/ceos.html">ceos</a>
+                            // under                                 <a class="post-category" href="/tag/python.html">Python</a>
+                                <a class="post-category" href="/tag/django.html">Django</a>
                         </p>
                 </header>
             </section>
-            <p>I was thinking about this last night as I was getting to bed - ever since Satya Nadella took over Microsoft, things have looked great for a company that was totally dismissed by other as being slow, bloated, and uninnovative. Microsoft, from a cursory point, looks hungry again. This was the company that I loved as a kid, playing with QBASIC on my father's DEC[], seemed to lose its way when Apple took over the world.</p>
-<p>Ballmer's performance as CEO of Microsoft was great. His numbers were solid. Microsoft's profit were high, and it grew solidly in Asia. </p>
-<p>Is this why Apple's in trouble now? </p>
-<p>My question is why? Why is it important for a technology company to be led by </p>
-<p>Was Meg Whitman the wrong choice for HP?</p>
-<p>http://www.forbes.com/sites/quickerbettertech/2014/02/10/why-do-nerds-become-successful-ceos/</p>
-<p>http://www.forbes.com/sites/matthickey/2014/02/04/nadella-is-the-kind-of-ceo-microsoft-needs-an-engineer/</p>
+            <p>Had trouble this morning restarting my Vagrant development environment. I was getting a Redis wrongresponse error on my Django application (wrong number of commands set). A bit of Googling revealed that the problem was related to an outdated version of Redis (2.1.4).</p>
+<p>I tried <code>sudo apt-get install redis-server</code>, but apparently this doesn't fetch the latest repository from ppa.</p>
+<p>The commands required to upgrade redis-server to the latest version (thanks this <a href="http://tosbourn.com/install-latest-version-redis-ubuntu/">post</a>):</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install -y python-software-properties
+<span class="nv">$ </span>sudo add-apt-repository -y ppa:rwky/redis
+<span class="nv">$ </span>sudo apt-get update
+<span class="nv">$ </span>sudo apt-get install -y redis-server
+</pre></div>
+
+
+<p>As explained in the previously hyperlinked post,</p>
+<p>Line 1 – So we want to add a new repository that contains the latest version of Redis, the easiest way to do this requires add-apt-repository, which most likely isn’t installed on your machine, so the first thing we want to do is install python-software-properties, this gives us access to add-apt-repository.</p>
+<p>Line 2- Next we want to set up this new repository.</p>
+<p>Line 3 – Now we want to update apt so it sees any changes we have made.</p>
+<p>Line 4 – Finally we want to install redis-server, now the latest version will be installed.</p>
+<p>The -y flag is useful when using these steps in a provisioning tool such as Ansible.</p>
             <a href="#" class="go-top">Go Top</a>
 <footer class="footer">
     <p>&copy; Saadat Qadri &ndash;
