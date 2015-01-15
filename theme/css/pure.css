@@ -5,7 +5,8 @@
 }
 
 @font-face{
-    font-family: Klima;
+    font-family: 'Klima';
+    src: url("fonts/klima-regular-web.ttf");
     src: url("fonts/klima-regular-web.eot");
 }
 
